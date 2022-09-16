@@ -1,9 +1,8 @@
-import math
 list_of_prices = [40.6, 200.8, 15.3]
 print("A.")
 def my_func():
     for list in list_of_prices:
-        rub = math.floor(list)
+        rub = int(list)
         kop = round(list % 1 * 100)
         print(rub, "руб.", kop, "коп")
 my_func()
