@@ -2,24 +2,14 @@ from time import sleep
 
 class trafficlight:
 
-    def switch_red(self):
+    def switch_lights(self):
         self.red = sleep(1)
         print('Красный')
-
-    def switch_green(self):
+        self.yellow = sleep(0.5)
+        print('Жёлтый')
         self.green = sleep(2)
         print('Зелёный')
 
-    def switch_yellow(self):
-        self.yellow = sleep(0.5)
-        print('Жёлтый')
-
 
 tl = trafficlight()
-
-tl.switch_red()
-tl.switch_yellow()
-tl.switch_green()
-
-
-
+tl.switch_lights()
