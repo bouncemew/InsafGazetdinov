@@ -22,3 +22,8 @@ class Box:
     @property
     def target_city(self):
         return self.__target_city
+        
+    @property
+    def change_from_city(self, new_from_city):
+        self.__from_city = new_from_city
+        return new_from_city
